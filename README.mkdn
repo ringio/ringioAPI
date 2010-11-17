@@ -1,0 +1,62 @@
+# Ringio API
+
+## About
+
+IMPORTANT: this project has just started, so the functionality is not complete yet.
+
+Provides a wrapper for the Ringio API in Ruby, using classes that inherit from ActiveResource::Base to access the API of Ringio ( see http://www.ringio.com ).
+The documentation of ActiveResource is here: http://api.rubyonrails.org/classes/ActiveResource/Base.html
+Available classes at the moment are:
+
+    Contact
+
+
+## Installing
+
+    gem install ringioAPI
+
+### Dependencies
+
+RubyGems >= 1.3.6
+ActiveResource ~> 3.0.0
+
+### Configuration
+
+You can configure the plugin API token like this:
+
+    require 'ringioAPI'
+    Ringio::Base.plugin_token = 'plugin_token_from_ringio'
+
+In Rails, you could add a file named ringio.rb in config/initializers/ with the previous content.
+
+## Usage
+
+For example, to get the contact with id = 14 :
+
+    contact14 = Ringio::Contact.find(:14)
+    
+To change the title of that contact:
+   
+    contact14.title = "New title"
+    contact14.save
+    
+To destroy that contact:
+
+    contact14.destroy
+    
+To create a Contact for the user with person_id = 78 :
+
+    newContact = Ringio::Contact.new(:name => 'New contact name', :userId => 78)
+    newContact.save
+
+If you have problems, check Ringio API specifications for details.
+    
+## License
+
+Under the Mozilla Public License Version 1.1
+
+
+## Author
+
+Álvaro Martín Fraguas - amartin@ringio.com
+
