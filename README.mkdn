@@ -4,8 +4,8 @@
 
 IMPORTANT: this project has just started, so the functionality is not complete yet.
 
-Provides a wrapper for the Ringio API in Ruby, using classes that inherit from ActiveResource::Base to access the [API of Ringio][ringio].
-The documentation of ActiveResource is [here][activeresource].
+Provides a wrapper for the [API of Ringio][ringio] in Ruby, using classes that inherit from [ActiveResource::Base][active-resource] to access it.
+
 Available classes at the moment are:
 
     Contact
@@ -75,5 +75,5 @@ Under the Mozilla Public License Version 1.1
 
 
 [ringio]: http://www.ringio.com
-[activeresource]: http://api.rubyonrails.org/classes/ActiveResource/Base.html
+[active-resource]: http://api.rubyonrails.org/classes/ActiveResource/Base.html
 [alvaro]: http://github.com/amartinfraguas
