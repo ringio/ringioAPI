@@ -22,14 +22,14 @@ ActiveResource ~> 3.0.0
 
 ### Configuration
 
-## General Configuration
+#### General Configuration
 
 You can configure the plugin API token like this:
 
     require 'ringioAPI'
     Ringio::Base.plugin_token = 'plugin_token_from_ringio'
 
-## Rails Configuration
+#### Rails Configuration
 
 In Rails, you could add a file named ringio.rb in config/initializers/ with the previous General Configuration content.
 
@@ -71,9 +71,8 @@ Under the Mozilla Public License Version 1.1
 
 ## Author
 
-[Álvaro Martín Fraguas] - amartin@ringio.com
+[Álvaro Martín Fraguas][alvaro] - amartin@ringio.com
 
-## References
 
 [ringio]: http://www.ringio.com
 [activeresource]: http://api.rubyonrails.org/classes/ActiveResource/Base.html
