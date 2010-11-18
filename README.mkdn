@@ -4,8 +4,8 @@
 
 IMPORTANT: this project has just started, so the functionality is not complete yet.
 
-Provides a wrapper for the Ringio API in Ruby, using classes that inherit from ActiveResource::Base to access the API of Ringio ( see http://www.ringio.com ).
-The documentation of ActiveResource is here: http://api.rubyonrails.org/classes/ActiveResource/Base.html
+Provides a wrapper for the Ringio API in Ruby, using classes that inherit from ActiveResource::Base to access the [API of Ringio][ringio].
+The documentation of ActiveResource is [here][activeresource].
 Available classes at the moment are:
 
     Contact
@@ -17,17 +17,30 @@ Available classes at the moment are:
 
 ### Dependencies
 
-RubyGems >= 1.3.6
+RubyGems >= 1.3.6 ,
 ActiveResource ~> 3.0.0
 
 ### Configuration
+
+## General Configuration
 
 You can configure the plugin API token like this:
 
     require 'ringioAPI'
     Ringio::Base.plugin_token = 'plugin_token_from_ringio'
 
-In Rails, you could add a file named ringio.rb in config/initializers/ with the previous content.
+## Rails Configuration
+
+In Rails, you could add a file named ringio.rb in config/initializers/ with the previous General Configuration content.
+
+Add this line in the file named Gemfile:
+
+    gem 'ringioAPI'
+    
+In the root of the project, run:
+
+    bundle install
+    bundle check
 
 ## Usage
 
@@ -58,5 +71,10 @@ Under the Mozilla Public License Version 1.1
 
 ## Author
 
-Álvaro Martín Fraguas - amartin@ringio.com
+[Álvaro Martín Fraguas] - amartin@ringio.com
 
+## References
+
+[ringio]: http://www.ringio.com
+[activeresource]: http://api.rubyonrails.org/classes/ActiveResource/Base.html
+[alvaro]: http://github.com/amartinfraguas
