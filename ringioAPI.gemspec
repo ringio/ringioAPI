@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.required_rubygems_version = ">= 1.3.6"
   spec.add_dependency "activeresource", "~>3.0.0"
 
-  spec.files         =  Dir['lib/*.rb'] + Dir['lib/ringioAPI/*.rb']
+  spec.files         =  Dir['*'] + Dir['lib/*.rb'] + Dir['lib/ringioAPI/*.rb']
   spec.require_paths = ["lib"]
 
   spec.author       = "\303\201lvaro Mart\303\255n Fraguas"
