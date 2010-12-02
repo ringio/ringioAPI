@@ -24,10 +24,10 @@ ActiveResource ~> 3.0.0
 
 #### General Configuration
 
-You can configure the plugin API token like this:
+You can configure the API token like this:
 
     require 'ringioAPI'
-    Ringio::Base.plugin_token = 'plugin_token_from_ringio'
+    RingioAPI::Base.user = 'RINGIO API TOKEN'
 
 Currently there is a bug in Rails 3.0.1 that makes JSON objects not parse the root node.
 Check the possible solutions and patches in [the corresponding thread in the Rails forums for developers][bug]
@@ -51,7 +51,7 @@ In the root of the project, run:
 
 For example, to get the contact with id = 14 :
 
-    contact14 = Ringio::Contact.find(:14)
+    contact14 = Ringio::Contact.find(14)
     
 To change the title of that contact:
    

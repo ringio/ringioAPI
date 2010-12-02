@@ -25,6 +25,6 @@ Gem::Specification.new do |spec|
     You can configure it for example by adding a file with this in config/initializers/ :
 
     require 'ringioAPI'
-    Ringio::Base.plugin_token = 'plugin_token_from_ringio'
+    RingioAPI::Base.user = 'RINGIO API TOKEN'
   EOT
 end
