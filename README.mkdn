@@ -51,7 +51,7 @@ In the root of the project, run:
 
 For example, to get the contact with id = 14 :
 
-    contact14 = Ringio::Contact.find(14)
+    contact14 = RingioAPI::Contact.find(14)
     
 To change the title of that contact:
    
@@ -64,7 +64,7 @@ To destroy that contact:
     
 To create a Contact for the user with person_id = 78 :
 
-    newContact = Ringio::Contact.new(:name => 'New contact name', :userId => 78)
+    newContact = RingioAPI::Contact.new(:name => 'New contact name', :userId => 78)
     newContact.save
 
 If you have problems, check Ringio API specifications for details.
