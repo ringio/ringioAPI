@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.platform    = Gem::Platform::RUBY
 
   spec.required_rubygems_version = ">= 1.3.6"
-  spec.add_dependency "activeresource", "~>3.0.0"
+  spec.add_dependency "activeresource", ">= 3.0.3"
 
   spec.files         =  Dir['*'] + Dir['lib/*.rb'] + Dir['lib/ringioAPI/*.rb']
   spec.require_paths = ["lib"]
