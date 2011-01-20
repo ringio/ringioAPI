@@ -1,4 +1,6 @@
 require 'ringioAPI/base.rb'
+
+require 'ringioAPI/account.rb'
 require 'ringioAPI/contact.rb'
 require 'ringioAPI/feed.rb'
 require 'ringioAPI/note.rb'
