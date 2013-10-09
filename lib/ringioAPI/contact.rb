@@ -3,14 +3,6 @@ module RingioAPI
   class Contact < Base
 
     class Datum < Base
-
-    end
-
-    # override methods as a TEMPORARY solution of the JSON parsing bugs of Rails
-
-    # move the nested resource to the root
-    def self.find(contact_id)
-      super(contact_id).contact
     end
 
     def save
