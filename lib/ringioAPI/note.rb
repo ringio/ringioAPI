@@ -2,11 +2,6 @@ module RingioAPI
   
   class Note < Base
 
-    # override methods as a temporary solution of the JSON parsing bugs of Rails
-    def self.find(note_id)
-      super(note_id).note
-    end
-
     def save
 
       result = super
