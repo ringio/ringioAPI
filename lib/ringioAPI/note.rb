@@ -1,5 +1,5 @@
 module RingioAPI
-  
+
   class Note < Base
 
     def save
